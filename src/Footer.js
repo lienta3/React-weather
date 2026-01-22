@@ -16,7 +16,7 @@ export default function Footer() {
       </a>
       and code is open-sourced on
       <a
-        href="https://github.com/lienta3/weather-react"
+        href="https://github.com/lienta3/React-weather"
         target="_blank"
         title="GitHub"
         rel="noreferrer"
@@ -26,7 +26,7 @@ export default function Footer() {
       </a>
       and website hosted on
       <a
-        href="https://weather-app-react-w4.netlify.app"
+        href="https://react-weather-appz.netlify.app/"
         target="_blank"
         title="Netlify"
         rel="noreferrer"
