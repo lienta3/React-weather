@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 
 export default function CurrentWeatherInfo(props) {
   return (
@@ -23,117 +24,11 @@ export default function CurrentWeatherInfo(props) {
           </p>
         </div>
         <div className="col-sm-6 d-flex justify-content-end">
-          <WeatherIcon code={props.data.icon} />
+          <WeatherIcon code={props.data.icon} className="align-self-center" />
           <WeatherTemperature celsius={props.data.temperature} />
         </div>
       </div>
-      <div className="weather-forecast" id="forecast">
-        <div>
-          Tue
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-            alt="weather condition icon"
-          />
-          <div className="weather-forecast-temperatures">
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              28°
-            </div>
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              22°
-            </div>
-          </div>
-        </div>
-        <div>
-          Tue
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-            alt="weather condition icon"
-          />
-          <div className="weather-forecast-temperatures">
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              28°
-            </div>
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              22°
-            </div>
-          </div>
-        </div>
-        <div>
-          Tue
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-            alt="weather condition icon"
-          />
-          <div className="weather-forecast-temperatures">
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              28°
-            </div>
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              22°
-            </div>
-          </div>
-        </div>
-        <div>
-          Tue
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-            alt="weather condition icon"
-          />
-          <div className="weather-forecast-temperatures">
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              28°
-            </div>
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              22°
-            </div>
-          </div>
-        </div>
-        <div>
-          Tue
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-            alt="weather condition icon"
-          />
-          <div className="weather-forecast-temperatures">
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              28°
-            </div>
-            <div
-              className="
-                    weather-forecast-temperature"
-            >
-              22°
-            </div>
-          </div>
-        </div>
-      </div>
+      <WeatherForecast />
     </main>
   );
 }
