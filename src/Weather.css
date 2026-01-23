@@ -55,24 +55,6 @@ main {
   color: #f65282;
 }
 
-.weather-app-temperature-value {
-  font-size: 88px;
-  font-weight: bold;
-  position: relative;
-  top: -10px;
-}
-
-.weather-app-temperature-unit {
-  position: relative;
-  top: 11px;
-  font-size: 28px;
-}
-
-.current-icon {
-  position: relative;
-  top: -10px;
-}
-
 .weather-forecast {
   display: flex;
   justify-content: space-around;
