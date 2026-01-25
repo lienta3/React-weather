@@ -14,12 +14,13 @@ export default function CurrentWeatherInfo(props) {
           <p className="weather-app-details">
             <span>
               <FormattedDate date={props.data.date} />
-            </span>{" "}
+            </span>
+            {", "}
             <span id="description">{props.data.condition}</span>
             <br />
             Humidity: <strong id="humidity">{props.data.humidity}%</strong>,
             Wind:
-            <strong id="windSpeed"> {props.data.wind} km/h</strong>
+            <strong id="windSpeed"> {Math.round(props.data.wind)} km/h</strong>
           </p>
         </div>
         <div className="col-sm-6 d-flex justify-content-end">
